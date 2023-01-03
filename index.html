@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Place Autocomplete</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div id="search-container">
+        <input id="search-input" type="text" placeholder="Enter a location" />
+    </div>
+    
+    <div id="map"></div>
+    <div id="about-me">
+        <img src="./assets/images/profile-picture.jpeg" alt="julia personal picture">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae officia assumenda atque molestias a saepe ipsum, est sapiente voluptates ullam laboriosam facilis quidem quos vero deleniti fuga ad nostrum!</p>
+    </div>
+    <div id="infowindow-content">
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNcjfyLx8wf9fM9iXH4Frnj8q6GRaEvdw&callback=initMap&libraries=places&v=weekly" defer></script>
+</body>
+</html>
