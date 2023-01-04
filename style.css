@@ -5,8 +5,28 @@
 }
 
 p{
-  padding: 0;
-  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#map #search-container{
+  display: inline;
+}
+
+#search-container{
+  display: none;
 }
 
 html,
@@ -22,7 +42,7 @@ body {
 
 body{
   padding: 25px;
-  background-color: #ECF4F4;
+  background-color: #ded2e3ba;
   display: grid;
   grid-template-columns: 1fr 400px;
   gap: 25px;
@@ -31,39 +51,77 @@ body{
 #about-me{
   background-color: #FFF;
   padding: 25px;
+  padding-top: 50px;
   border-radius: 6px;
   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 #about-me img{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 }
 
 #infowindow-content .title {
   font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 #infowindow-content {
   display: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 #map #infowindow-content {
   display: inline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 #search-container {
   background-color: #fff;
   padding: 20px;
-  width: 500px;
+  width: 450px;
   border: 0;
   border-radius: 2px;
   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  font: 400 18px Roboto, Arial, sans-serif;
+  margin: 20px;
+  font: 400 18px;
   overflow: hidden;
-  font-family: Roboto;
+}
+
+#search-input {
+  padding: 5px;
+  width: 400px;
+  /* border: 2px solid #ccc;
+  border-radius: 4px; */
+}
+
+table{
+  margin-left: 10px;
+  text-align: center;
+}
+
+th, td {
+  padding-right: 100px;
+  text-align: right;
+}
+
+button {
+  background-color: rgba(208, 143, 208, 0.859);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
